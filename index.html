@@ -23,7 +23,8 @@
         /* background-color: var(--background-color); */
         /* color: ; */
         font-weight: 700;
-        padding: .5em 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
         /* border: none; */
         position: relative;
         border-radius: 5px;
@@ -79,13 +80,74 @@
         line-height: 15px;
         border: 10px solid white;
     }
+
+
+    /* PROGRESS BAR */
+    /* .progress {
+        position: relative;
+        height: 20px;
+        width: 80%;
+        margin-bottom: 2rem;
+        margin: auto;
+    }
+
+    .progress #length {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #a525f3;
+        opacity: 0.8;
+
+    }
+
+    .progress #progress__animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #4d1c78;
+        z-index: 55;
+        animation-name: moving;
+        animation-duration: 22.8s;
+        /* 7.6 per slide */
+    /* animation-timing-function: linear; */
+    /* animation-iteration-count: infinite; */
+    /* } */
+    /* @keyframes moving {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    .progress .slider__count {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .slider__count .count {
+        width: 33.33%;
+        border: 1px solid black;
+
+    }  */
 </style>
 <!-- flex items-center justify-center -->
 
-<body class="overflow-x-hidden bg-[#09020D] ">
+<body class="overflow-x-hidden bg-[#14041C] ">
     <!-- HERO SECTION  -->
     <section class="">
-        <div class="lg:flex lg:flex-row flex flex-col-reverse bg-[#09020D] pb-4  h-auto ">
+        <div class="lg:flex lg:flex-row flex flex-col-reverse bg-[#14041C] pb-4  h-auto ">
             <div class="flex items-center w-full justify-center">
                 <iframe src="https://my.spline.design/untitled-61907e0b3f44bbbb7cd46f9b318e7180/" frameborder='0'
                     height='650vw' class="  sm:w-3/4 my-[8em] lg:mt-0"></iframe>
@@ -102,7 +164,7 @@
                     FOUNDER OF
                     EDITEND
                 </button>
-                <div class="md:text-[6em] text-6xl  mt-16 lg:mt-4 tagline lg:text-start">
+                <div class="md:text-[5em] text-6xl  mt-16 lg:mt-4 tagline lg:text-start">
                     Turning podcasts into profits
                 </div>
                 <div class="mt-16 lg:mt-10 text-2xl lg:text-start opacity-50">
@@ -122,21 +184,22 @@
     <!-- Slider -->
     <section>
         <!-- Slider main container -->
-        <div class="bg-[#09020D] pt-4">
-            <div class="swiper h-[674px] sm:h-auto bg-[#09020D]  rounded-2xl w-[90%] md:w-[75%] lg:w-[65%]">
+        <div class="bg-[#14041C] ">
+            <div class="swiper relative  h-[674px] sm:h-auto bg-[#14041C]  rounded-2xl w-[90%] md:w-[75%] lg:w-[65%]">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper spb-10 sm:pb-[0]  text-white text-center">
+                <div class="swiper-wrapper z-[-1] absolute sm:pb-[0]  text-white text-center">
                     <!-- Slides -->
 
                     <!-- slide1 -->
-                    <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pb-10">
+                    <div
+                        class="swiper-slide items-center rounded-2xl flex justify-center bg-image  pt-0 sm:pt-4 slide active">
                         <div class="flex flex-col">
-                            <div class="my-[2em]">
+                            <div class="mb-[2em]  sm:my-0">
                                 <div class=" font-bold text-4xl"><span class="opacity-50">0</span>1.</div>
-                                <div class=" font-bold text-4xl"> Lead Genaration</div>
+                                <div class=" font-bold text-4xl">Lead Generation</div>
                             </div>
-                            <div class="md:grid md:grid-cols-2">
-                                <div class="font-medium m-auto text-center  opacity-75 mx-10">
+                            <div class="sm:grid sm:grid-cols-2 sm:gap-1  sm:pl-24">
+                                <div class="font-medium my-auto sm:text-start mx-8 sm:mx-0 opacity-75 lg:text-xl">
                                     Interview guests that fit your Ideal Customer Profile (ICP) and ask them questions
                                     around the market demand, trends and career progression. This will take just 30
                                     minutes a week while generating big enterprise level leads.
@@ -151,19 +214,19 @@
                         </div>
                     </div>
                     <!-- slide2 -->
-                    <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pb-10">
+                    <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pt-0 sm:pt-4 slide">
                         <div class="flex flex-col">
-                            <div class="my-[2em]">
+                            <div class="mb-[2em] sm:my-0">
                                 <div class=" font-bold text-4xl"><span class="opacity-50">0</span>2.</div>
                                 <div class=" font-bold text-4xl"> Marketing</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2">
-                                <div class="font-medium m-auto text-center  opacity-75 mx-10">
+                            <div class="sm:grid sm:grid-cols-2 sm:pl-24 ">
+                                <div class="font-medium my-auto sm:text-start sm:mx-0 mx-3 opacity-75 lg:text-xl ">
                                     Along with posting the content on all podcasting platforms, it will also be
                                     repurposed in the form of short videos and blog posts on LinkedIn thereby increasing
                                     brand awareness, audience & authority in the industry.
                                 </div>
-                                <div class="flex items-center justify-center">
+                                <div class="flex items-start justify-center">
                                     <lord-icon src="https://cdn.lordicon.com/gqdnbnwt.json" trigger="loop"
                                         colors="primary:#121331,secondary:#6821a0" style="width:250px;height:250px"
                                         class="">
@@ -173,15 +236,15 @@
                         </div>
                     </div>
                     <!-- slide 3 -->
-                    <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pb-10">
+                    <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pt-0  sm:pt-4 slide">
                         <div class="">
-                            <div class="my-[2em]">
+                            <div class="mb-[2em] sm:my-0">
                                 <div class=" font-bold text-4xl"><span class="opacity-50">0</span>3.</div>
                                 <div class=" font-bold text-4xl">Networking</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2">
-                                <div class="font-medium m-auto text-center  opacity-75 mx-10">
-                                    <!-- This gives you the ability to network with anyone you want to in your industry. -->
+                            <div class="sm:grid sm:grid-cols-2 sm:pl-24">
+                                <div class="font-medium my-auto sm:text-start mx-4 sm:mx-0 opacity-75 lg:text-xl">
+                                    This gives you the ability to network with anyone you want to in your industry.
                                     From talking to someone about partnering up to adding an integration
                                     gone are the days of finding a mutual friend, you can just ask to interview them on
                                     your podcast!
@@ -189,18 +252,35 @@
                                 <div class="">
                                     <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
                                         colors="primary:#121331,secondary:#6821a0" style="width:250px;height:250px"
-                                        class="">
+                                        class="lg:h-[400px]lg:w-[400px]">
                                     </lord-icon>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- navigation icons -->
+                <div class="swiper-button-next opacity-0 sm:opacity-100"></div>
+                <div class="swiper-button-prev opacity-0 sm:opacity-100"></div>
+                <!-- default swiper  -->
+                <!-- <div class="swiper-scrollbar"></div> -->
                 <!-- If we need pagination -->
-                <div class="swiper-pagination bullets"></div>
+                <!-- <div class="swiper-pagination bullets"></div> -->
+                <!-- progress bar code? -->
+                <!-- <div class="progress">
+                    <div id="length"></div>
+                    <div id="progress__animation"></div>
+                    <div class="slider__count">
+                        <div class="count"></div>
+                        <div class="count"></div>
+                        <div class="count"></div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
+
+
 
 
     <script>
