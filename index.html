@@ -18,8 +18,13 @@
     <title>EDITEND</title>
 </head>
 <style>
+    /* ANIMATION ON TWO BUTTONS  */
     .bg-image {
-        background-image: linear-gradient(to right bottom, #09020d, #0d0312, #110317, #14041a, #16051e, #1f0e2e, #291240, #341552, #4d1c78, #6821a0, #8524c9, #a525f3);
+        background-image: linear-gradient(to right bottom, #16051e, #1f0e2e, #291240, #341552, #4d1c78, #6821a0, #8524c9, #a525f3);
+    }
+
+    .bg-image-2 {
+        background-image: linear-gradient(to right bottom, #16051e, #1f0e2e, #291240, #341552, , #6821a0, #8524c9, #a525f3);
     }
 
     .btn {
@@ -65,31 +70,30 @@
     .btn.btn-background-slide:hover,
     .btn.btn-background-slide:focus {
         color: white;
-        font-weight: bolder;
+        /* font-weight: bolder; */
     }
+
+
+
 
     .btn.btn-background-slide:hover::before,
     .btn.btn-background-slide:focus::before {
         transform: scaleX(1);
     }
 
-    .faces {
-        display: block;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-    }
-
+    /* PAFINATION OF SLIDER */
     .swiper-pagination-bullet {
         background-color: #09020D;
         line-height: 15px;
-        border: 10px solid white;
+        border: 10px solid #FF9E00;
     }
 
+    .glass {
+        background: linear-gradient(13deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
 
-
-
+    }
 
     .clr {
         color: white;
@@ -97,13 +101,13 @@
 </style>
 <!-- flex items-center justify-center -->
 
-<body class=" bg-[#14041C] overflow-x-hidden ">
+<body class=" bg-[#14041C] overflow-x-hidden">
     <!-- HERO SECTION  -->
     <section class="">
-        <div class="relative bg-[#14041C] pb-10 ml-2  w-full flex items-center h-[100vh] justify-center">
-            <div class="z-[1] opacity-80 sm:opacity-100">
+        <div class="relative bg-[#14041C]    w-full flex items-center h-[100vh] justify-center">
+            <div class="z-[1] ">
                 <button
-                    class="font-['Sora'] mx-auto sm:mx-0 flex  mb-16 text-2xl cursor-pointer btn btn-background-slide text-[#FF9E00] "
+                    class="font-['Sora'] mx-auto sm:mx-0 flex  mb-16 text-lg tracking-widest cursor-pointer btn btn-background-slide text-[#FF9E00] "
                     id="btn-1">
                     FROM THE
                     FOUNDER OF
@@ -116,16 +120,16 @@
                 </div>
                 <div
                     class=" md:text-xl lg:text-2xl md:opacity-50 mx-8 sm:mx-0 text-center sm:text-start my-16 text-white font-['Inter']  sm:pl-[2rem] font-semibold sm:w-2/3">
-                    Podcasting is the fastest way to grow your B2B buisness and we make it super simple for you
+                    Podcasting is the fastest way to grow your B2B buisness and we make it super simple for you.
                 </div>
                 <button
-                    class=" lg:mt-[3em] btn flex justify-center mx-auto sm:mx-0 btn-background-slide  bg-[#14041C]  text-[#FF9E00]  lg:flex lg:justify-start font-['Sora']">
+                    class=" lg:mt-[3em] btn flex text-lg tracking-wide justify-center mx-auto sm:mx-0 btn-background-slide  bg-[#14041C]  text-[#FF9E00]  lg:flex lg:justify-start font-['Sora']">
                     Work Together
                 </button>
             </div>
             <div
-                class="overflow-hidden absolute lg:top-[0%] top-[30%] sm:top-0 bottom-[0]  sm:left-[30%] lg:right-[100%] lg:h-[800px]  lg:w-[800px] sm:h-[750px] sm:w-[750px] h-full">
-                <video width="1000" height="" autoplay loop muted>
+                class="overflow-hidden absolute lg:top-[50%] top-[20%] sm:top-0 bottom-[0]  sm:left-[40%]  lg:h-[1000px]  lg:w-[2500px] sm:h-[750px] sm:w-[750px] h-full">
+                <video width="2500" height="1000" autoplay loop muted>
                     <source src="./assets/video-final.mp4" type="video/mp4">
                     Your browser does not support the video.
                 </video>
@@ -134,6 +138,14 @@
 
         </div>
 
+    </section>
+    <!-- banner text -->
+    <section class="relative">
+        <!-- <div
+            class="text-white font-xl font-['Sora'] font-bold italic text-center sm:text-2xl md:text-4xl lg:text-6xl mb-10 w-full">
+            ARE <span class="text-[#FF9E00]">YOU</span> READY <span class="text-[#FF9E00]">TO</span> HANDLE <span
+                class="text-[#FF9E00]">ENTERPRISE</span> LEADS?
+        </div> -->
     </section>
     <!-- Slider -->
     <section class="mx-auto lg:mt-24">
@@ -149,7 +161,8 @@
                         class="swiper-slide items-center rounded-2xl flex justify-center bg-image  pt-0 sm:pt-4 slide active">
                         <div class="flex flex-col">
                             <div class="mb-[2em]  sm:my-0">
-                                <div class=" font-bold text-4xl"><span class="opacity-50">0</span>1.</div>
+                                <div class=" font-bold text-4xl text-[#FF9E00]"><span class="opacity-50">0</span>1.
+                                </div>
                                 <div class=" font-bold text-4xl font-['Sora']">Lead Generation</div>
                             </div>
                             <div class="sm:grid sm:grid-cols-2 sm:gap-1  sm:pl-24">
@@ -161,7 +174,7 @@
                                 </div>
                                 <div class="flex items-center justify-center">
                                     <lord-icon src="https://cdn.lordicon.com/uqpazftn.json" trigger="loop"
-                                        colors="primary:#121331,secondary:#6821a0" style="width:250px;height:250px"
+                                        colors="primary:#121331,secondary:#FF9E00" style="width:250px;height:250px"
                                         class="">
                                     </lord-icon>
                                 </div>
@@ -172,7 +185,8 @@
                     <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pt-0 sm:pt-4 slide">
                         <div class="flex flex-col">
                             <div class="mb-[2em] sm:my-0">
-                                <div class=" font-bold text-4xl"><span class="opacity-50">0</span>2.</div>
+                                <div class=" font-bold text-4xl text-[#FF9E00] "><span class=" opacity-50">0</span>2.
+                                </div>
                                 <div class="font-['Sora'] font-bold text-4xl">Content Marketing</div>
                             </div>
                             <div class="sm:grid sm:grid-cols-2 sm:pl-24 ">
@@ -184,7 +198,7 @@
                                 </div>
                                 <div class="flex items-start justify-center">
                                     <lord-icon src="https://cdn.lordicon.com/gqdnbnwt.json" trigger="loop"
-                                        colors="primary:#121331,secondary:#6821a0" style="width:250px;height:250px"
+                                        colors="primary:#121331,secondary:#FF9E00" style="width:250px;height:250px"
                                         class="">
                                     </lord-icon>
                                 </div>
@@ -195,7 +209,8 @@
                     <div class="swiper-slide items-center rounded-2xl flex justify-center bg-image pt-0  sm:pt-4 slide">
                         <div class="">
                             <div class="mb-[2em] sm:my-0">
-                                <div class=" font-bold text-4xl"><span class="opacity-50">0</span>3.</div>
+                                <div class=" font-bold text-4xl text-[#FF9E00]"><span class="opacity-50">0</span>3.
+                                </div>
                                 <div class="font-['Sora'] font-bold text-4xl">Networking</div>
                             </div>
                             <div class="sm:grid sm:grid-cols-2 sm:pl-24">
@@ -208,7 +223,7 @@
                                 </div>
                                 <div class="">
                                     <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
-                                        colors="primary:#121331,secondary:#6821a0" style="width:250px;height:250px"
+                                        colors="primary:#121331,secondary:#FF9E00" style="width:250px;height:250px"
                                         class="lg:h-[400px]lg:w-[400px]">
                                     </lord-icon>
                                 </div>
@@ -236,7 +251,6 @@
             </div>
         </div>
     </section>
-
     <!-- <hr class="mt-10 w-[70%] mx-auto opacity-30"> -->
     <!-- Timeline -->
     <section class="text-white bg-[#14041C]">
@@ -248,8 +262,8 @@
                     <li class="flex">
                         <div class="">
                             <div
-                                class=" sm:text-4xl  md:text-4xl font-['Sora'] opacity-70 font-bold whitespace-nowrap   justify-start text-start">
-                                What We Do <br> <span class="text-[#FF9E00] underline-offset-4 underline">Pre
+                                class=" sm:text-4xl  md:text-4xl font-['Sora']  font-bold whitespace-nowrap   justify-start text-start">
+                                How We Handle<br> <span class="text-[#FF9E00] underline-offset-4 underline">Pre
                                     Show</span>
                             </div>
 
@@ -260,27 +274,28 @@
                             </div>
                         </div>
                         <div class="flex flex-col mx-4 sm:h-20 text-start">
-                            <div class="whitespace-nowrap text-sm md:text-xl sm:text-xl "><span
-                                    class="text-[#FF9E00] opacity-50  ">01
-                                </span>Scheduling
-                            </div>
-                            <div class="whitespace-nowrap sm:text-xl text-sm"><span class="text-[#FF9E00] opacity-50">02
-                                </span>Show Prep
-                            </div>
-                            <div class="whitespace-nowrap  sm:text-xl text-sm "><span
-                                    class="text-[#FF9E00] opacity-50">03
-                                </span>Equipment
-                            </div>
-                            <div class="whitespace-nowrap  sm:text-xl text-sm "><span
-                                    class="text-[#FF9E00] opacity-50">04
-                                </span>Artwork
-                            </div>
-                            <div class="whitespace-nowrap sm:text-xl  text-sm"><span
-                                    class="text-[#FF9E00] opacity-50">05
+                            <div class="whitespace-nowrap text-[0.8em] lg:text-[1.09em] sm:text-[1.03em] md:text-2xl ">
+                                <span class="text-[#FF9E00]  opacity-50  ">01
                                 </span>Strategy
                             </div>
-                            <div class="whitespace-nowrap sm:text-xl  text-sm"><span
-                                    class="text-[#FF9E00] opacity-50">06
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50  ">02
+                                </span>Audio & Visual Assets
+                            </div>
+                            <div class="whitespace-nowrap sm:text-[1.03em]  lg:text-[1.09em] text-[0.8em] md:text-2xl ">
+                                <span class="text-[#FF9E00] opacity-50 ">03
+                                </span>Calls With Potential Clients
+                            </div>
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50">04
+                                </span>Guest Coordination
+                            </div>
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50">05
+                                </span>Guest Research & Outline
+                            </div>
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50">06
                                 </span>Guest Coordination
 
 
@@ -295,7 +310,7 @@
 
                         <div class=" mx-2 flex flex-col  bg-imageProcess">
                             <div
-                                class="mx-auto text-center whitespace-nowrap text-2xl font-['Sora'] opacity-70 font-bold">
+                                class="mx-auto text-center whitespace-nowrap sm:text-4xl text-white text-xl font-['Sora']  font-bold">
                                 What You Do
                             </div>
                             <div class="text-[#FF9E00] underline-offset-4 mt-4 text-center mx-auto font-['Sora']">
@@ -309,40 +324,41 @@
                     <li class="flex">
                         <div class="">
                             <div
-                                class=" sm:text-4xl  md:text-4xl font-['Sora'] opacity-70 font-bold whitespace-nowrap   justify-start text-start">
-                                What We Do <br> <span class="text-[#FF9E00] underline-offset-4 underline">Post
+                                class=" sm:text-4xl  md:text-4xl font-['Sora']  font-bold whitespace-nowrap   justify-start text-start">
+                                How We Handle<br> <span class="text-[#FF9E00] underline-offset-4 underline">Post
                                     Show</span>
                             </div>
 
                             <div class="flex">
-                                <div class="w-auto  mt-3 ">
-                                    <img src="./assets/image3.png" alt="" class="h-full w-full">
+                                <div class="w-auto">
+                                    <img src="./assets/image1.png" alt="" class="h-full w-full">
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col mx-4 sm:h-20 text-start">
-                            <div class="whitespace-nowrap text-sm md:text-xl sm:text-xl "><span
-                                    class="text-[#FF9E00] opacity-50  ">01
-                                </span>Audio Production
+                            <div class="whitespace-nowrap text-[0.8em] lg:text-[1.09em] sm:text-[1.03em] md:text-2xl ">
+                                <span class="text-[#FF9E00]  opacity-50  ">01
+                                </span>Strategy
                             </div>
-                            <div class="whitespace-nowrap sm:text-xl text-sm"><span class="text-[#FF9E00] opacity-50">02
-                                </span>Show Notes
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50  ">02
+                                </span>Audio & Visual Assets
                             </div>
-                            <div class="whitespace-nowrap  sm:text-xl text-sm "><span
-                                    class="text-[#FF9E00] opacity-50">03
-                                </span>Social Promotions
+                            <div class="whitespace-nowrap sm:text-[1.03em]  lg:text-[1.09em] text-[0.8em] md:text-2xl ">
+                                <span class="text-[#FF9E00] opacity-50 ">03
+                                </span>Calls With Potential Clients
                             </div>
-                            <div class="whitespace-nowrap  sm:text-xl text-sm "><span
-                                    class="text-[#FF9E00] opacity-50">04
-                                </span>Video Clippings
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50">04
+                                </span>Guest Coordination
                             </div>
-                            <div class="whitespace-nowrap sm:text-xl  text-sm"><span
-                                    class="text-[#FF9E00] opacity-50">05
-                                </span>Uploading
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50">05
+                                </span>Guest Research & Outline
                             </div>
-                            <div class="whitespace-nowrap sm:text-xl  text-sm"><span
-                                    class="text-[#FF9E00] opacity-50">06
-                                </span>Publishing
+                            <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.8em] md:text-2xl">
+                                <span class="text-[#FF9E00] opacity-50">06
+                                </span>Guest Coordination
 
 
 
@@ -359,6 +375,64 @@
 
 
     </section>
+
+    <!-- testimonial video -->
+    <section class="mb-10 w-4/5 mx-auto shadow-[0px_0px_10px_10px_rgba(128,0,128,0.3)]">
+        <h1 class=" mx-auto text-center sm:text-6xl text-[#FF9E00] text-4xl p-4 my-10 font-['Sora']">
+            Testimonials Of Editend</h1>
+        <div class="content-center aspect-video p-5  ">
+            <iframe class="h-full w-full" src="https://www.youtube.com/embed/JisptrBvEs8"
+                title="Testimonial video | Editend" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- statistics -->
+    <section>
+        <div class="mb-4">
+            <div
+                class="bg-image mb-4 lg:w-3/5 w-2/3 sm:w-4/5 h-[550px] sm:h-auto sm:p-4 mx-auto rounded-md pt-4 sm:flex sm:flex-row justify-start">
+                <div class="w-[250px] sm:mx-0  m-auto items-start ">
+                    <img src="assets/pod1.png" alt="" class="object-cover rounded-md">
+                </div>
+                <div class="">
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div
+                class="bg-image  w-2/3 lg:w-3/5 sm:w-4/5 h-[550px] sm:h-auto sm:p-4 mx-auto rounded-md pt-4 sm:flex sm:flex-row justify-start mb-4">
+                <div class="w-[250px] sm:mx-0  m-auto items-start ">
+                    <img src="assets/pod1.png" alt="" class="object-cover rounded-md">
+                </div>
+                <div class="">
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div
+                class="bg-image my-auto w-2/3 lg:w-3/5 sm:w-4/5 h-[550px] sm:h-auto sm:p-4 mx-auto rounded-md pt-4 sm:flex sm:flex-row justify-start mb-4">
+                <div class="w-[250px] sm:mx-0  m-auto items-start ">
+                    <img src="assets/pod1.png" alt="" class="object-cover rounded-md">
+                </div>
+                <div class="">
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 
 
 

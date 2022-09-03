@@ -1,9 +1,10 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
+    initialSlide: 3,
     loop: true,
     autoplay: {
-        delay: 7600,
+        delay: 60000,
         disableOnInteraction: false,
     },
 
