@@ -1267,8 +1267,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:top-\[20\%\] {
-    top: 20%;
+  .lg\:top-\[50\%\] {
+    top: 50%;
   }
 
   .lg\:mt-\[3em\] {
@@ -1291,8 +1291,8 @@ video {
     height: 400px;
   }
 
-  .lg\:w-\[1500px\] {
-    width: 1500px;
+  .lg\:w-\[1000px\] {
+    width: 1000px;
   }
 
   .lg\:w-\[65\%\] {
