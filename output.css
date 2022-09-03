@@ -597,8 +597,8 @@ video {
   position: relative;
 }
 
-.top-\[30\%\] {
-  top: 30%;
+.top-\[10\%\] {
+  top: 10%;
 }
 
 .bottom-\[0\] {
@@ -1279,16 +1279,8 @@ video {
     display: flex;
   }
 
-  .lg\:h-\[900px\] {
-    height: 900px;
-  }
-
   .lg\:h-\[400px\] {
     height: 400px;
-  }
-
-  .lg\:w-\[900px\] {
-    width: 900px;
   }
 
   .lg\:w-\[65\%\] {
