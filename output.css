@@ -597,8 +597,8 @@ video {
   position: relative;
 }
 
-.top-\[20\%\] {
-  top: 20%;
+.top-\[30\%\] {
+  top: 30%;
 }
 
 .bottom-\[0\] {
@@ -817,16 +817,20 @@ video {
   width: 250px;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
 .w-1 {
   width: 0.25rem;
 }
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .flex-grow {
@@ -1263,8 +1267,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:top-\[50\%\] {
-    top: 50%;
+  .lg\:top-\[20\%\] {
+    top: 20%;
   }
 
   .lg\:mt-\[3em\] {
@@ -1287,8 +1291,8 @@ video {
     height: 400px;
   }
 
-  .lg\:w-\[2500px\] {
-    width: 2500px;
+  .lg\:w-\[1500px\] {
+    width: 1500px;
   }
 
   .lg\:w-\[65\%\] {
