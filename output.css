@@ -1267,10 +1267,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:top-\[50\%\] {
-    top: 50%;
-  }
-
   .lg\:mt-\[3em\] {
     margin-top: 3em;
   }
@@ -1283,16 +1279,16 @@ video {
     display: flex;
   }
 
-  .lg\:h-\[1000px\] {
-    height: 1000px;
+  .lg\:h-\[900px\] {
+    height: 900px;
   }
 
   .lg\:h-\[400px\] {
     height: 400px;
   }
 
-  .lg\:w-\[1000px\] {
-    width: 1000px;
+  .lg\:w-\[900px\] {
+    width: 900px;
   }
 
   .lg\:w-\[65\%\] {
