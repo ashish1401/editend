@@ -597,8 +597,8 @@ video {
   position: relative;
 }
 
-.top-\[10\%\] {
-  top: 10%;
+.top-\[30\%\] {
+  top: 30%;
 }
 
 .bottom-\[0\] {
@@ -713,6 +713,22 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -781,6 +797,10 @@ video {
   height: 550px;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -809,12 +829,16 @@ video {
   width: 80%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-\[250px\] {
   width: 250px;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-4 {
@@ -979,6 +1003,10 @@ video {
   font-family: 'Inter';
 }
 
+.font-\[\'Kanit\'\] {
+  font-family: 'Kanit';
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -994,13 +1022,18 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[0\.8em\] {
-  font-size: 0.8em;
+.text-\[0\.7em\] {
+  font-size: 0.7em;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-2xl {
@@ -1016,11 +1049,6 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-semibold {
@@ -1055,6 +1083,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFE900\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 233 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1100,6 +1133,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0px_0px_10px_10px_rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
+  --tw-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
+  --tw-shadow-colored: 0px 0px 10px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline {
   outline-style: solid;
 }
@@ -1126,6 +1165,11 @@ video {
   transition-duration: 150ms;
 }
 
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:top-0 {
     top: 0px;
@@ -1143,6 +1187,11 @@ video {
   .sm\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .sm\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .sm\:flex {
