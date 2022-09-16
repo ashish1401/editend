@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Inter:wght@100&family=Kanit&family=Sora:wght@600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Exo:wght@100&family=Inter:wght@100&family=Kanit&family=Sora:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="section2.css">
@@ -28,6 +28,23 @@
     }
 
     .btn {
+        /* background-color: var(--background-color); */
+        /* color: ; */
+        font-weight: 700;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        /* border: none; */
+        position: relative;
+        border-radius: 5px;
+
+        --background-color: #09020D;
+        --accent-color: #FF9E00;
+    }
+
+    .btn-1 {
         /* background-color: var(--background-color); */
         /* color: ; */
         font-weight: 700;
@@ -102,7 +119,7 @@
         <div class="relative bg-[#14041C]    w-full flex items-center h-[100vh] justify-center">
             <div class="z-[1] ">
                 <button
-                    class="font-['Sora'] mx-auto sm:mx-0 flex  mb-16 text-lg tracking-widest cursor-pointer btn btn-background-slide my-auto text-[#FF9E00] "
+                    class="font-['Sora'] mx-auto sm:mx-0 flex  mb-16 text-sm tracking-widest cursor-pointer btn btn-background-slide my-auto text-[#FF9E00] "
                     id="btn-1">
                     FROM THE
                     FOUNDER OF
@@ -118,7 +135,7 @@
                     Podcasting is the fastest way to grow your B2B buisness and we make it super simple for you.
                 </div>
                 <button
-                    class=" lg:mt-[3em] btn flex text-lg tracking-wide justify-center mx-auto sm:mx-0 btn-background-slide  bg-[#14041C]  text-[#FF9E00]  lg:flex lg:justify-start font-['Sora']">
+                    class=" lg:mt-[3em] btn flex text-sm tracking-wide justify-center mx-auto sm:mx-0 btn-background-slide  bg-[#14041C]  text-[#FF9E00]  lg:flex lg:justify-start font-['Sora']">
                     Work Together
                 </button>
             </div>
@@ -160,14 +177,14 @@
                                 </div>
                                 <div class=" font-bold text-4xl font-['Sora']">Lead Generation</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2 sm:gap-1  sm:pl-24">
-                                <div
-                                    class="font-medium my-auto sm:text-start mx-8 sm:mx-0 opacity-75 lg:text-xl font-['Inter']">
-                                    Interview guests that fit your Ideal Customer Profile (ICP) and ask them questions
+                            <div class="sm:grid sm:grid-cols-2 sm:gap-1  sm:pl-36">
+                                <div class=" font-bold my-auto  sm:text-start mx-8 sm:mx-0 lg:text-xl font-['Inter']">
+                                    <span class="text-[#FF9E00] font-extrabold"> Interview guests that fit your Ideal
+                                        Customer Profile (ICP)</span> and ask them questions
                                     around the market demand, trends and career progression. This will take just 30
                                     minutes a week while generating big enterprise level leads.
                                 </div>
-                                <div class="flex items-center justify-center">
+                                <div class="sm:flex items-center sm:justify-start sm:items-start">
                                     <lord-icon src="https://cdn.lordicon.com/uqpazftn.json" trigger="loop"
                                         colors="primary:#121331,secondary:#FF9E00" style="width:250px;height:250px"
                                         class="">
@@ -184,14 +201,17 @@
                                 </div>
                                 <div class="font-['Sora'] font-bold text-4xl">Content Marketing</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2 sm:pl-24 ">
-                                <div
-                                    class="font-medium my-auto sm:text-start sm:mx-0 mx-3 opacity-75 lg:text-xl font-['Inter']">
+                            <div class="sm:grid sm:grid-cols-2 sm:pl-36 ">
+                                <div class="font-bold my-auto sm:text-start sm:mx-0 mx-3  lg:text-xl font-['Inter']">
                                     Along with posting the content on all podcasting platforms, it will also be
-                                    repurposed in the form of short videos and blog posts on LinkedIn thereby increasing
+                                    <span class="text-[#FF9E00] font-extrabold">repurposed in the form of short videos
+                                        and
+                                        blog
+                                        posts</span> on
+                                    LinkedIn thereby increasing
                                     brand awareness, audience & authority in the industry.
                                 </div>
-                                <div class="flex items-start justify-center">
+                                <div class="sm:flex items-center sm:justify-start sm:items-start">
                                     <lord-icon src="https://cdn.lordicon.com/gqdnbnwt.json" trigger="loop"
                                         colors="primary:#121331,secondary:#FF9E00" style="width:250px;height:250px"
                                         class="">
@@ -208,15 +228,15 @@
                                 </div>
                                 <div class="font-['Sora'] font-bold text-4xl">Networking</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2 sm:pl-24">
-                                <div
-                                    class="font-medium my-auto sm:text-start mx-4 sm:mx-0 opacity-75 lg:text-xl font-['Inter']">
-                                    This gives you the ability to network with anyone you want to in your industry.
+                            <div class="sm:grid sm:grid-cols-2 sm:pl-36">
+                                <div class=" font-bold my-auto sm:text-start mx-4 sm:mx-0  lg:text-xl font-['Inter']">
+                                    This gives you the <span class="text-[#FF9E00] font-extrabold"> ability to network
+                                        with anyone you want to in your industry.</span>
                                     From talking to someone about partnering up to adding an integration
                                     gone are the days of finding a mutual friend, you can just ask to interview them on
                                     your podcast!
                                 </div>
-                                <div class="">
+                                <div class="sm:flex  sm:justify-start sm:items-start">
                                     <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
                                         colors="primary:#121331,secondary:#FF9E00" style="width:250px;height:250px"
                                         class="lg:h-[400px]lg:w-[400px]">
@@ -267,7 +287,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col mx-2 sm:h-20 text-start">
+                        <div class="flex flex-col  sm:h-20 text-start">
                             <div class="whitespace-nowrap text-[0.7em] lg:text-[1.09em] sm:text-[1.03em] md:text-2xl ">
                                 <span class="text-[#FF9E00]  opacity-50  ">01
                                 </span>Strategy
@@ -278,7 +298,7 @@
                             </div>
                             <div class="whitespace-nowrap sm:text-[1.03em]  lg:text-[1.09em] text-[0.7em] md:text-2xl ">
                                 <span class="text-[#FF9E00] opacity-50 ">03
-                                </span>Calls With Potential Clients
+                                </span>Reach Out to Ideal Clients
                             </div>
                             <div class="whitespace-nowrap sm:text-[1.03em] lg:text-[1.09em] text-[0.7em] md:text-2xl">
                                 <span class="text-[#FF9E00] opacity-50">04
@@ -298,15 +318,23 @@
                         <div class=" mx-2 flex flex-col  bg-imageProcess">
 
 
-                            <div class="h-full w-full relative ">
+                            <div class="h-full w-full relative">
                                 <div
-                                    class="  relative top-20 text-center font-['Sora'] text-xl text-[#FF9E00] sm:text-2xl lg:text-3xl ">
-                                    You have 30 minute conversations & build your network.
+                                    class="  relative top-20 text-center font-['Sora'] text-xl text-[#FF9E00] sm:text-2xl lg:text-3xl italic">
+                                    You have 30 minute conversations <br> <button
+                                        class="  italic text-xl font-extrabold text-[#FFE900] mt-3 sm:text-3xl lg:text-4xl font-['Sora']">
+
+                                        and build your network!
+                                    </button>
 
                                 </div>
                                 <div class="">
-                                    <img src="./assets/process2.gif" alt="" class="mx-auto">
+                                    <img src="./assets/process2.gif" alt="" class=" mx-auto">
                                 </div>
+                                <button
+                                    class="mb-[40px] btn flex text-lg  mx-auto  btn-background-slide    text-[#FF9E00] font-['Sora']">
+                                    Know More
+                                </button>
                             </div>
 
                         </div>
@@ -326,7 +354,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col mx-2 sm:h-20 text-start">
+                        <div class="flex flex-col mx-1 sm:h-20 text-start">
                             <div class="whitespace-nowrap text-[0.7em] lg:text-[1.09em] sm:text-[1.03em] md:text-2xl ">
                                 <span class="text-[#FF9E00]  opacity-50  ">01
                                 </span>Audio Editing
@@ -364,9 +392,9 @@
 
     </section>
     <!-- testimonial video -->
-    <section class="m-10 w-4/5 mx-auto ">
-        <h1 class="mx-auto text-center  sm:text-3xl text-[#FF9E00] text-3xl p-1 font-['Sora'] md:text-4xl mb-4 ">
-            Changing Businesses For Good</h1>
+    <section class="mt-20 w-4/5 mx-auto ">
+        <h1 class="mx-auto text-center  sm:text-4xl text-[#FF9E00] text-3xl p-1 font-['Sora'] md:text-4xl mb-4 ">
+            Don't believe us?<br> Just ask them!</h1>
         <div class="content-center aspect-video p-1 shadow-[0px_0px_10px_10px_rgba(128,0,128,0.3)] ">
             <iframe class="h-full w-full" src="https://www.youtube.com/embed/JisptrBvEs8"
                 title="Testimonial video | Editend" frameborder="0"
@@ -375,67 +403,61 @@
         </div>
     </section>
     <!-- statistics -->
-    <section>
-        <div class="mb-8">
-            <div
-                class="bg-image-2 mb-4 w-[90%] h-auto  sm:p-4 mx-auto rounded-md pt-4 sm:flex sm:flex-row  md:w-[400px]  ">
-                <div class="px-2 w-[98%]   sm:mx-0 m-auto items-start">
-                    <img src="assets/pod1.png" alt=""
-                        class="object-cover  rounded-md shadow-[0px_0px_10px_10px_rgba(0,0,0,0.2)]  box-border">
-
+    <section class="my-24">
+        <!-- pod1 -->
+        <div class="p-4 w-4/5 mx-auto h-auto  md:h-auto md:flex md:flex-row   bg-image-2 rounded-md">
+            <div class="md:w-[30%] sm:my-5 ">
+                <img src="assets/pod1.png" alt="" class="rounded-md shadow-[0px_0px_10px_10px_rgba(0,0,0,0.3)] "
+                    style="">
+            </div>
+            <div class="my-5 pt-5 md:w-2/3 px-4 sm:my-0  md:ml-10 h-auto">
+                <div class="text-white md:my-auto text-2xl  " style="font-family: 'Cedarville Cursive', cursive;">
+                    Podcast
                 </div>
-
-                <div class="my-auto">
-
-                    <div class="flex flex-col sm:flex-row my-auto justify-center items-center ">
-                        <div class="text-center  justify-center   sm:mt-0 sm:ml-10 w-[400px] flex flex-col">
-                            <div
-                                class="font['Sora'] text-3xl  text-white  font-bold underline-offset-4 tracking-wide hover:underline cursor-pointer whitespace-nowrap mt-6 ">
-                                Money
-                                Mindset
-                            </div>
-                            <div>
-                                <span
-                                    class="font-['Sora'] text-[#FF9E00] italic tracking-widest mt-1 whitespace-nowrap ">with
-                                    Gull Khan
-                                </span>
-                            </div>
-                            <div class="flex flex-row  mt-6 mx-auto">
-                                <div class="h-10 w-10 mr-2">
-                                    <img src="assets/spotify.png" alt="">
-                                </div>
-                                <div
-                                    class="text-center sm:text-start font-['Kanit'] my-auto font-bold whitespace-nowrap text-white">
-                                    More Than 400K downloads
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-[#FF9E00] font-bold p-4 mx-auto my-auto text-center ">
-                            "<br>Ever since we started working with Aryan & his team we have seen huge success in our
-                            business.
-                            Our podcast has over 650k+ all time downloads, interviewed 100+ guests(including
-                            multiple 8 fig.
-                            earners) and closed many high ticket offers. They really go above and beyond to make
-                            sure you
-                            hit your business goals.<br>"
-
-                        </div>
-                    </div>
-
-
-
-
-
-
+                <div class="my-3 md:my-9 italic text-3xl  font-['Sora'] text-[#FF9E00]">
+                    Money Mindset with Gull Khan
                 </div>
+                <div class="mt-4">
 
-
-
-
+                    <div class=" text-center text-[#FFE900]  text-3xl">"</div>
+                    <div class="text-white ">Ever since we started working with Aryan & his team we have seen
+                        huge
+                        success in our business.
+                        Our podcast has over 650k+ all time downloads, interviewed 100+ guests(including multiple 8
+                        fig.
+                        earners) and closed many high ticket offers. They really go above and beyond to make sure
+                        you
+                        hit your business goals. </div>
+                    <div class=" text-center my-2  text-[#FFE900] text-3xl">"</div>
+                </div>
 
             </div>
         </div>
+        <div class="p-4 mt-10 w-4/5 mx-auto h-auto  md:h-auto md:flex md:flex-row   bg-image-2 rounded-md">
+            <div class="md:w-[30%] sm:my-5 ">
+                <img src="assets/pod2.jpg" alt="" class="rounded-md shadow-[0px_0px_10px_10px_rgba(0,0,0,0.3)] "
+                    style="">
+            </div>
+            <div class="my-5 pt-5 md:w-2/3 px-4 sm:my-0  md:ml-10 h-auto">
+                <div class="text-white text-2xl md:my-auto  u" style="font-family: 'Cedarville Cursive', cursive;">
+                    Podcast
+                </div>
+                <div class="my-3 md:my-9 italic text-3xl  font-['Sora'] text-[#FF9E00]">
+                    The Road to Self Love With Paul Fishman
+                </div>
+                <div class="mt-4">
+                    <div class=" text-center text-[#FFE900]  text-3xl">"</div>
+                    <div class="text-white">Hiring Aryan & his team is by far the best decision that I’ve made in my
+                        business so far. We just hit 350k+ all time downloads and over 180 episodes. Working with
+                        Aryan
+                        & his team was so easy & seamless that I never had worry about anything except enjoying the
+                        fun
+                        of interviewing people</div>
+                    <div class=" text-center my-2  text-[#FFE900] text-3xl">"</div>
+                </div>
 
+            </div>
+        </div>
     </section>
 
 
