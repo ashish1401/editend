@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Exo:wght@100&family=Inter:wght@100&family=Kanit&family=Sora:wght@600&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="section2.css">
 
@@ -30,7 +32,7 @@
     .btn {
         /* background-color: var(--background-color); */
         /* color: ; */
-        font-weight: 700;
+        font-weight: 400;
         padding-top: .5em;
         padding-bottom: .5em;
         padding-left: 2rem;
@@ -44,22 +46,7 @@
         --accent-color: #FF9E00;
     }
 
-    .btn-1 {
-        /* background-color: var(--background-color); */
-        /* color: ; */
-        font-weight: 700;
-        padding-top: .5em;
-        padding-bottom: .5em;
-        padding-left: 2rem;
-        padding-right: 2rem;
 
-        /* border: none; */
-        position: relative;
-        border-radius: 5px;
-
-        --background-color: #09020D;
-        --accent-color: #FF9E00;
-    }
 
 
     .btn.btn-background-slide::before {
@@ -105,6 +92,11 @@
         border: 10px solid #FF9E00;
     }
 
+    @media only screen and (max-width: 600px) {
+        button.work-together {
+            margin: auto;
+        }
+    }
 
 
     .clr {
@@ -119,8 +111,7 @@
         <div class="relative bg-[#14041C]    w-full flex items-center h-[100vh] justify-center">
             <div class="z-[1] ">
                 <button
-                    class="font-['Sora'] mx-auto sm:mx-0 flex  mb-16 text-sm tracking-widest cursor-pointer btn btn-background-slide my-auto text-[#FF9E00] "
-                    id="btn-1">
+                    class="font-['Poppins'] mx-auto sm:mx-0 flex  mb-16 text-sm tracking-[0.3em] sm:tracking-[0.5em] cursor-pointer editend btn btn-background-slide my-auto text-[#FF9E00] ">
                     FROM THE
                     FOUNDER OF
                     EDITEND
@@ -131,11 +122,11 @@
                     </div>
                 </div>
                 <div
-                    class=" md:text-xl lg:text-2xl md:opacity-50 mx-8 sm:mx-0 text-center sm:text-start my-16 text-white font-['Inter']  sm:pl-[2rem] font-semibold sm:w-2/3">
-                    Podcasting is the fastest way to grow your B2B buisness and we make it super simple for you.
+                    class=" md:text-xl lg:text-2xl md:opacity-50 mx-8 sm:mx-0 text-center sm:text-start my-16 text-white font-['Proxima Nova']  sm:pl-[2rem] font-semibold sm:w-2/3">
+                    Podcasting is the fastest way to grow your B2B business and we make it super simple for you.
                 </div>
                 <button
-                    class=" lg:mt-[3em] btn flex text-sm tracking-wide justify-center mx-auto sm:mx-0 btn-background-slide  bg-[#14041C]  text-[#FF9E00]  lg:flex lg:justify-start font-['Sora']">
+                    class="work-together lg:mt-[3em] hover:bg-white hover:text-[#FF9E00] active:bg-white active:text-[#FF9E00] p-2 rounded-sm flex text-sm tracking-[0.2em] justify-center  sm:mx-[2em] bg-[#FF9E00]  text-[#14041C]  lg:flex lg:justify-start font-['Poppins']">
                     Work Together
                 </button>
             </div>
@@ -177,9 +168,9 @@
                                 </div>
                                 <div class=" font-bold text-4xl font-['Sora']">Lead Generation</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2 sm:gap-1  sm:pl-36">
-                                <div class=" font-bold my-auto  sm:text-start mx-8 sm:mx-0 lg:text-xl font-['Inter']">
-                                    <span class="text-[#FF9E00] font-extrabold"> Interview guests that fit your Ideal
+                            <div class="sm:grid sm:grid-cols-2 sm:gap-1  sm:pl-[20%]">
+                                <div class="  my-auto  sm:text-start mx-8 sm:mx-0 lg:text-xl font-['Proxima Nova']">
+                                    <span class="text-[#FF9E00] "> Interview guests that fit your Ideal
                                         Customer Profile (ICP)</span> and ask them questions
                                     around the market demand, trends and career progression. This will take just 30
                                     minutes a week while generating big enterprise level leads.
@@ -201,10 +192,10 @@
                                 </div>
                                 <div class="font-['Sora'] font-bold text-4xl">Content Marketing</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2 sm:pl-36 ">
-                                <div class="font-bold my-auto sm:text-start sm:mx-0 mx-3  lg:text-xl font-['Inter']">
+                            <div class="sm:grid sm:grid-cols-2 sm:pl-[20%] ">
+                                <div class=" my-auto sm:text-start sm:mx-0 mx-3  lg:text-xl font-['Proxima Nova']">
                                     Along with posting the content on all podcasting platforms, it will also be
-                                    <span class="text-[#FF9E00] font-extrabold">repurposed in the form of short videos
+                                    <span class="text-[#FF9E00] ">repurposed in the form of short videos
                                         and
                                         blog
                                         posts</span> on
@@ -228,9 +219,9 @@
                                 </div>
                                 <div class="font-['Sora'] font-bold text-4xl">Networking</div>
                             </div>
-                            <div class="sm:grid sm:grid-cols-2 sm:pl-36">
-                                <div class=" font-bold my-auto sm:text-start mx-4 sm:mx-0  lg:text-xl font-['Inter']">
-                                    This gives you the <span class="text-[#FF9E00] font-extrabold"> ability to network
+                            <div class="sm:grid sm:grid-cols-2 sm:pl-[20%]">
+                                <div class="  my-auto sm:text-start mx-4 sm:mx-0  lg:text-xl font-['Proxima Nova']">
+                                    This gives you the <span class="text-[#FF9E00] "> ability to network
                                         with anyone you want to in your industry.</span>
                                     From talking to someone about partnering up to adding an integration
                                     gone are the days of finding a mutual friend, you can just ask to interview them on
@@ -268,11 +259,13 @@
     </section>
     <!-- Timeline -->
     <section class="text-white bg-[#14041C]">
-        <div class="main ">
-            <h3 class="heading sm:text-6xl text-white text-4xl my-12 font-['Sora']">Our Process</h3>
-
+        <div class="main my-2">
+            <div class="content-end flex justify-end">
+                <h1 class=" sm:text-6xl text-right flex items-start text-white text-4xl mt-4 font-['Sora']">Our Process
+                </h1>
+            </div>
             <div class="container mt-12">
-                <ul>
+                <ul class=" ">
                     <li class="flex">
                         <div class="">
                             <div
@@ -315,16 +308,16 @@
                         <span class="circle"></span>
                     </li>
                     <li class="">
-                        <div class=" mx-2 flex flex-col  bg-imageProcess">
+                        <div class="  flex flex-col  bg-imageProcess">
 
 
                             <div class="h-full w-full relative">
                                 <div
-                                    class="  relative top-20 text-center font-['Sora'] text-xl text-[#FF9E00] sm:text-2xl lg:text-3xl italic">
-                                    You have 30 minute conversations <br> <button
-                                        class="  italic text-xl font-extrabold text-[#FFE900] mt-3 sm:text-3xl lg:text-4xl font-['Sora']">
+                                    class="  relative top-20 text-center font-['Sora'] text-xl text-white sm:text-2xl lg:text-3xl whitespace-nowrap">
+                                    You have 30 minute conversations & <br> <button
+                                        class=" text-xl font-extrabold text-[#FF9E00] mt-4 sm:text-3xl lg:text-4xl font-['Poppins']  tracking-[0.4em]">
 
-                                        and build your network!
+                                        BUILD YOUR NETWORK
                                     </button>
 
                                 </div>
@@ -332,8 +325,8 @@
                                     <img src="./assets/process2.gif" alt="" class=" mx-auto">
                                 </div>
                                 <button
-                                    class="mb-[40px] btn flex text-lg  mx-auto  btn-background-slide    text-[#FF9E00] font-['Sora']">
-                                    Know More
+                                    class="mb-[40px] tracking-[0.2em] text-sm btn flex text-lg  mx-auto  btn-background-slide    text-[#FF9E00] font-['Poppins']">
+                                    Work Together
                                 </button>
                             </div>
 
@@ -393,8 +386,14 @@
     </section>
     <!-- testimonial video -->
     <section class="mt-20 w-4/5 mx-auto ">
-        <h1 class="mx-auto text-center  sm:text-4xl text-[#FF9E00] text-3xl p-1 font-['Sora'] md:text-4xl mb-4 ">
-            Don't believe us?<br> Just ask them!</h1>
+
+        <div class=" text-center sm:text-6xl text-white text-4xl mx-auto my-12 font-['Sora']">Don't Believe Us?
+            <br> Just
+            Ask
+            Them!
+        </div>
+
+
         <div class="content-center aspect-video p-1 shadow-[0px_0px_10px_10px_rgba(128,0,128,0.3)] ">
             <iframe class="h-full w-full" src="https://www.youtube.com/embed/JisptrBvEs8"
                 title="Testimonial video | Editend" frameborder="0"
@@ -406,21 +405,20 @@
     <section class="my-24">
         <!-- pod1 -->
         <div class="p-4 w-4/5 mx-auto h-auto  md:h-auto md:flex md:flex-row   bg-image-2 rounded-md">
-            <div class="md:w-[30%] sm:my-5 ">
+            <div class="md:w-[30%] sm:my-auto ">
                 <img src="assets/pod1.png" alt="" class="rounded-md shadow-[0px_0px_10px_10px_rgba(0,0,0,0.3)] "
                     style="">
             </div>
-            <div class="my-5 pt-5 md:w-2/3 px-4 sm:my-0  md:ml-10 h-auto">
-                <div class="text-white md:my-auto text-2xl  " style="font-family: 'Cedarville Cursive', cursive;">
-                    Podcast
-                </div>
-                <div class="my-3 md:my-9 italic text-3xl  font-['Sora'] text-[#FF9E00]">
+            <div class="my-5 pt-5 md:w-2/3 px-4 sm:my-auto lg:my-5  md:ml-10 h-auto">
+
+                <div class="my-3 md:my-9  text-3xl  font-['Sora'] text-[#FF9E00]">
                     Money Mindset with Gull Khan
                 </div>
                 <div class="mt-4">
 
-                    <div class=" text-center text-[#FFE900]  text-3xl">"</div>
-                    <div class="text-white ">Ever since we started working with Aryan & his team we have seen
+                    <div class=" text-center text-[#FF9E00]  text-4xl">"</div>
+                    <div class="text-white font-['Proxima Nova']">Ever since we started working with Aryan & his team we
+                        have seen
                         huge
                         success in our business.
                         Our podcast has over 650k+ all time downloads, interviewed 100+ guests(including multiple 8
@@ -428,32 +426,31 @@
                         earners) and closed many high ticket offers. They really go above and beyond to make sure
                         you
                         hit your business goals. </div>
-                    <div class=" text-center my-2  text-[#FFE900] text-3xl">"</div>
+                    <div class=" text-center my-2  text-[#FF9E00] text-4xl">"</div>
                 </div>
 
             </div>
         </div>
         <div class="p-4 mt-10 w-4/5 mx-auto h-auto  md:h-auto md:flex md:flex-row   bg-image-2 rounded-md">
-            <div class="md:w-[30%] sm:my-5 ">
+            <div class="md:w-[30%] sm:my-auto ">
                 <img src="assets/pod2.jpg" alt="" class="rounded-md shadow-[0px_0px_10px_10px_rgba(0,0,0,0.3)] "
                     style="">
             </div>
             <div class="my-5 pt-5 md:w-2/3 px-4 sm:my-0  md:ml-10 h-auto">
-                <div class="text-white text-2xl md:my-auto  u" style="font-family: 'Cedarville Cursive', cursive;">
-                    Podcast
-                </div>
-                <div class="my-3 md:my-9 italic text-3xl  font-['Sora'] text-[#FF9E00]">
+
+                <div class="my-3 md:my-9  text-3xl  font-['Sora'] text-[#FF9E00]">
                     The Road to Self Love With Paul Fishman
                 </div>
                 <div class="mt-4">
-                    <div class=" text-center text-[#FFE900]  text-3xl">"</div>
-                    <div class="text-white">Hiring Aryan & his team is by far the best decision that I’ve made in my
+                    <div class=" text-center text-[#FF9E00]  text-4xl">"</div>
+                    <div class="text-white font-['Proxima Nova']">Hiring Aryan & his team is by far the best decision
+                        that I’ve made in my
                         business so far. We just hit 350k+ all time downloads and over 180 episodes. Working with
                         Aryan
                         & his team was so easy & seamless that I never had worry about anything except enjoying the
                         fun
                         of interviewing people</div>
-                    <div class=" text-center my-2  text-[#FFE900] text-3xl">"</div>
+                    <div class=" text-center my-2  text-[#FF9E00] text-4xl">"</div>
                 </div>
 
             </div>
@@ -467,8 +464,8 @@
 
 
 
-    <script>
-        document.getElementById(" btn-1").onclick = function () { location.href = "https://www.editend.net/"; }; </script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
