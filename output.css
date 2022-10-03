@@ -877,6 +877,10 @@ video {
   height: 674px;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .h-auto {
   height: auto;
 }
